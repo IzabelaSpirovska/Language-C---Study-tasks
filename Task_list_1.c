@@ -224,7 +224,7 @@ int main()
 -------------------------------------------------------------------------------------------------------
 	
 //Task 12
-
+	
 #include<stdio.h>
 
 int main()
@@ -232,20 +232,29 @@ int main()
 	int a, b, c, d, common_denom, numerator1, numerator2, sum_num;
 	char z;
 	
-	printf("Enter the numerator and denominator in the format a/b: \n");
+	printf("Enter the numerator and denominator in the format a/b \n: ");
 	scanf("%d%c%d", &a, &z, &b);
 	printf("Written fraction: %d/%d. \n", a, b);
-	printf("Enter the numerator and denominator in the format c/d: \n");
+	printf("Enter the numerator and denominator in the format c/d \n: ");
 	scanf("%d%c%d", &c, &z, &d);
 	printf("Written fraction: %d/%d. \n", c, d);
+
+	if (b != d)
+	{
+		numerator1 = a * d;
+		numerator2 = c * b;
+		common_denom = b * d;
+		sum_num = numerator1 + numerator2;
+		printf("The sum of the fractions is: %d/%d. \n", sum_num, common_denom);
+	}
+	else 
+	{
+		numerator1 = a + c;
+		common_denom = b;
+		printf("The sum of the fractions is: %d/%d. \n", numerator1, common_denom);
+	}
 	
-	common_denom = b * d;
-	numerator1 = a * d;
-	numerator2 = c * b;
-	sum_num = numerator1 + numerator2;
-	
-	printf("The sum of the fractions is: %d/%d. \n", sum_num, common_denom);
-	
+
 	return 0;
 }
 -------------------------------------------------------------------------------------------------------
@@ -259,7 +268,7 @@ int main()
     //WYLICZ WYNIK
     sum = 25 + 37 - 19;
     // POKAZ WYNIK
-    printf(" Odpowiedzia jest %d.\n", sum);
+    printf(" Odpowiedzia jest %d. \n", sum);
 
     return 0;
 }
