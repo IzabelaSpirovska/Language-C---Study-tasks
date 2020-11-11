@@ -203,4 +203,196 @@ int main()
 
 //Task 5
 
+#include<stdio.h>
 
+int main()
+{
+	int v;
+	
+	printf("Enter the wind speed in the knots: \n");
+	scanf("%d", &v);
+	if (v < 1)
+	{
+		printf("This wind speed on the Beaufort scale is Calm. \n");
+		return 0;
+	}
+	else if (v >= 1 && v <= 3)
+	{
+		printf("This wind speed on the Beaufort scale is Zefir. \n");
+		return 0;
+	}
+	else if (v >= 4 && v <= 27)
+	{
+		printf("This wind speed on the Beaufort scale is Breeze. \n");
+		return 0;
+	}
+	else if (v >= 28 && v <= 47)
+	{
+		printf("This wind speed on the Beaufort scale is Gale. \n");
+		return 0;
+	}
+	else if (v >= 48 && v <= 63)
+	{
+		printf("This wind speed on the Beaufort scale is Storm. \n");
+		return 0;
+	}	
+	else
+	{
+		printf("This wind speed on the Beaufort scale is Hurricane. \n");
+		return 0;
+	}
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 6
+	
+#include<stdio.h>
+
+int main()
+{
+	float n, k;
+	printf("Enter a number: \n");
+	scanf("%f",&n);
+	k = (n >= 0 ? n : -n);
+	printf("The absolute value of %d is %d. \n", n, k);
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 7a
+	
+#include<stdio.h>
+
+int main()
+{
+	float a, b, c, d;
+	
+	printf("Enter three different numbers separated by single space: \n");
+	scanf("%f" "%f" "%f", &a, &b, &c);
+	
+    d = a >= b ? (a >= c ? a : c) : (b >= c ? b : c);
+    
+	printf("The biggest number is %f.\n", d);
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 7b
+	
+#include<stdio.h>
+
+int main()
+{
+	float a, b, sum, d;
+	printf("Enter two negative numbers separated by single space: \n");
+	scanf("%f" "%f", &a, &b);
+	
+	sum = a + b;
+	d = (a < 0 && b < 0) ? printf("The sum of two negative numbers = %d", sum) : printf("Enter two negative numbers.");
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 7c
+
+#include<stdio.h>
+
+int main()
+{
+	float a, b, sum, d;
+	printf("Enter two negative or two positive numbers separated by single space: \n");
+	scanf("%f" "%f", &a, &b);
+	
+	sum = a + b;
+	(a < 0 && b < 0) ? 
+        printf("The sum of two negative numbers = %f \n", sum) : (a > 0 && b > 0) ? 
+        printf("The sum of two positive numbers = %f \n", sum) : printf("Enter two numbers with the same characters. \n");
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 8
+	
+#include<stdio.h>
+
+int main()
+{
+	int year;
+	printf("Enter the year: \n");
+	scanf("%d", &year);
+
+	
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+	{
+		printf("The year is a leap.");
+		return 0;
+	}
+	else
+	{
+		printf("This year is not a leap year.");
+		return 0;
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 9
+	
+#include<stdio.h>
+V_AIR = 343;
+V_WATER = 1490;
+V_STEEL = 5100;
+
+int main()
+{
+	int center, v;
+	float s,t;
+	printf("Select the center where the sound will be heard. You have a choice: air, water or steel. Write the number 1, 2 or 3. \n");
+	scanf("%d", &center);
+	
+	if (center == 1)
+	{
+		v = V_AIR;
+	}
+	else if (center == 2)
+	{
+		v = V_WATER;
+	}
+	else if (center == 3)
+	{
+		v = V_STEEL;
+	}
+	else
+	{
+		printf("Choose one of the possible options: air, water, steel. \n");
+		return 1;
+	}
+	
+		printf("Write the positive distance in meters, which the sound will travel in the center: \n");
+		scanf("%f", &s);
+		
+		if (s > 0)
+		{
+			t = s / v;
+			printf("The sound needs %f s time to travel %f m distance in the selected center.", t, s);	
+			return 0;	
+		}
+		else
+		{
+			printf("Entered number of meters is out of range!");
+			return 1;
+		}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+
+//Task 10a
