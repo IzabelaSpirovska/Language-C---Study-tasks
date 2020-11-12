@@ -425,9 +425,17 @@ int main()
 	}
 	else if (op == '/')
 	{
-		result = a / b;
-		printf("The operator entered is /. The result of the division is %.2f \n", result);
-		return 0;
+		if ( b != 0)
+		{
+			result = a / b;
+			printf("The operator entered is /. The result of the division is %.2f \n", result);
+			return 0;
+		}
+		else
+		{
+			printf("Dividing by 0!");
+			return 1;
+		}
 	}
 	else
 	{
@@ -452,30 +460,43 @@ int main()
     
     switch (c)
     {
-        case '+':	{
-		  			result = a + b;
-                    printf("The operator entered is +. The result of the addition is %.2f \n", result);
-                    break;
-                	}
-        case '-':   {
-					result = a - b;
-                    printf("The operator entered is -. The result of the subtraction is %.2f \n", result);
-                    break;
-                    }
-        case '*':   {
-					result = a * b;
-                    printf("The operator entered is *. The result of the multiplication is %.2f \n", result);
-                    break;
-                    }
-        case '/':   {
-					result = a / b;
-                    printf("The operator entered is /. The result of the division is %.2f \n", result);
-                    break;
-                    }
-        default:    {
-					printf("Enter the basic operator: +, -, * or /. \n");
-                    break;
-                    }
+        case '+':
+		{
+		result = a + b;
+                printf("The operator entered is +. The result of the addition is %.2f \n", result);
+		break;
+                }
+        case '-':   
+		{
+		result = a - b;
+                printf("The operator entered is -. The result of the subtraction is %.2f \n", result);
+                break;
+		}
+        case '*':   
+		{
+		result = a * b;
+                printf("The operator entered is *. The result of the multiplication is %.2f \n", result);
+                break;
+                }
+        case '/':   
+		{
+		result = a / b;			
+		if ( b != 0)
+		{			
+			printf("The operator entered is /. The result of the division is %.2f \n", result);
+                    	break;
+                }
+                else
+                {	
+                    	printf("Dividing by 0!");
+			return 1;
+		}
+                }
+        default:    
+		{
+		printf("Enter the basic operator: +, -, * or /. \n");
+                break;
+                }
     }
                     
     return 0;
@@ -513,19 +534,19 @@ int main()
 				printf("It is a grade A. \n");
 				break;
 				}
-		case 8:	{
+		case 8:		{
 				printf("It is a grade B. \n");
 				break;
 				}
-		case 7:	{
+		case 7:		{
 				printf("It is a grade C. \n");
 				break;
 				}
-		case 6:	{
+		case 6:		{
 				printf("It is a grade D. \n");
 				break;
 				}
-		case 5:	{
+		case 5:		{
 				printf("It is a grade E. \n");
 				break;
 				}
@@ -535,7 +556,7 @@ int main()
 				break;
 				}
 				
-		default:{	
+		default:	{	
 				printf("The value entered is out of range: less than 0 or more than 100. \n");
 				break;
 				}
