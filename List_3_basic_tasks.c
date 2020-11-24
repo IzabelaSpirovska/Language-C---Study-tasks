@@ -117,3 +117,53 @@ int main()
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
+//Task 5a
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers from 1 to n are: \n");
+	
+	
+	while(i <= n)
+	{
+		printf("%d \n", i);
+		i++;
+	}
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5b
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers from n to 1 are: \n");
+	
+	i = n;
+	
+	while(i >= 1)
+	{
+		printf("%d \n", i);
+		i--;
+	}
+	
+	
+	return 0;
+}
