@@ -242,7 +242,6 @@ int main()
 		count++;
 	}
 	
-	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -271,9 +270,12 @@ int main()
 
 	}
 	
-	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5g
+//loop while
+	
 #include<stdio.h>
 
 int main()
@@ -294,6 +296,31 @@ int main()
 
 	}
 	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5h
+//loop while
+
+#include<stdio.h>
+const N = 17;
+
+int main()
+{
+	int a1,an;
+	int count = 1;
+	
+	printf("Enter the next 17 words of the sequence a1=3, an=3(an-1)-4: \n");
+	
+	a1 = 3;
+	an = a1;
+	
+	while(count <= N)
+	{
+		printf(" %d. %d \n", count, an);
+		an = 3 * an - 4;
+		count++;
+	}
 	
 	return 0;
 }
