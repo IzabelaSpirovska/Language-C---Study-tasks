@@ -20,6 +20,7 @@ int main()
 		printf("%d. %d \n", count, i);
 		count++;
 	}
+	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -111,6 +112,7 @@ int main()
 	
 	printf("The entered decimal number is %llu and its binary representation is %d. \n", decimal_n, binary);
 	printf("There are %llu ones in the binary representation.", count);
+	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -134,7 +136,6 @@ int main()
 		printf("%d \n", i);
 		i++;
 	}
-	
 	
 	return 0;
 }
@@ -161,7 +162,6 @@ int main()
 		i--;
 	}
 	
-	
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
@@ -183,6 +183,63 @@ int main()
 	{
 		printf("%d \t", i);
 		i += 2;
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5d
+//loop while
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers odd starting with n are: \n");
+	
+	if( n % 2 == 0)
+	{
+		i = n - 1;
+	}
+	else
+	{
+		i = n;
+	}
+	
+	while(i >= 1)
+	{
+		printf("%d \n", i);
+		i -= 2;
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5e
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned long n;
+	int i = 1;
+	int count = 1;
+	
+	printf("Enter the last natural number of the arithmetic sequence: \n");
+	scanf("%lu", &n);
+	printf("List of consecutive word of the arithmetic progression from 1 to %du are: \n", n);
+	
+	while(count <= n)
+	{
+		printf("%d \n", i);
+		i+= 3;
+		count++;
 	}
 	
 	
