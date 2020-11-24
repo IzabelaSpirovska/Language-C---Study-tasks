@@ -324,3 +324,55 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5i
+//loop while
+
+#include<stdio.h>
+const int N = 31;
+
+int main()
+{
+	int a0, an;
+	int count = 1; 
+	
+	printf("Enter the next 31 words of the sequence a0 = 0, an = 2an-1 + 1 (dla n > 1): \n");
+	
+	a0 = 0;
+	an = a0;
+	
+	while(count <= N)
+	{
+		printf(" %d. %d \n", count, an);
+		an = 2 * an + 1;
+		count++;	
+	}
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5j
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n, sum;
+	int count = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	
+	
+	while(count <= n)
+	{
+		sum += count;
+		count++;
+	}
+	
+	printf("Sum of Natural Numbers = %d \n", sum);
+	
+	return 0;
+}
+	
