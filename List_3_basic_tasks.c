@@ -23,7 +23,6 @@ int main()
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
-
 //Task 2
 
 #include<stdio.h>
@@ -56,7 +55,6 @@ int main()
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
-
 //Task 3
 
 #include<stdio.h>
@@ -82,7 +80,6 @@ int main()
 	return 0;
 }
 ----------------------------------------------------------------------------------------------
-
 //Task 4
 
 #include<stdio.h>
@@ -162,6 +159,30 @@ int main()
 	{
 		printf("%d \n", i);
 		i--;
+	}
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 5c
+//loop while
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int i = 2;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive natural numbers even and smaller than n are: \n");
+	
+	
+	while(i < n)
+	{
+		printf("%d \t", i);
+		i += 2;
 	}
 	
 	
