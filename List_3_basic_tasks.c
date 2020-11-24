@@ -435,3 +435,44 @@ int main()
 		
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5m
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int an;
+	int i = 1;
+	int count_pos = 0;
+	int count_neg = 0;
+	int count_zero = 0;
+	printf("Enter the number of words of the sequence: \n");
+	scanf("%du", &n);
+	
+	while(i <= n)
+	{
+		printf("Enter the word sequence: \n");
+		scanf("%d", &an);
+		if(an < 0)
+		{
+			count_neg++;
+		}
+		else if (an > 0)
+		{
+			count_pos++;
+		}
+		else
+		{
+			count_zero++;
+		}
+	i++;
+	}
+	printf("The number of positive integer upto: %d \n", count_pos);
+	printf("The number of negative integer upto: %d\n", count_neg);
+	printf("Number of zero: %d \n", count_zero);
+		
+	return 0;
+}
