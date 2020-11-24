@@ -401,3 +401,37 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 5l
+//loop while
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n, an;
+	int i = 1;
+	int count_even = 0;
+	int count_odd = 0;
+	printf("Enter the number of words of the sequence: \n");
+	scanf("%du", &n);
+	
+	while(i <= n)
+	{
+		printf("Enter the word sequence: \n");
+		scanf("%du", &an);
+		if(an % 2 == 0)
+		{
+			count_even++;
+		}
+		else
+		{
+			count_odd++;
+		}
+	i++;
+	}
+	printf("The number of even natural numbers upto: %d \n", count_even);
+	printf("The number of odd natural numbers upto: %d\n", count_odd);
+		
+	return 0;
+}
