@@ -127,19 +127,16 @@ int main()
 	if (a == 0 && b == 0)
 	{
 		printf("Infinitely many solutions.");
-		return 0;
 	}
 	else if (a == 0 && b != 0)
 	{
 		printf("A conflicting equation.");
-		return 0;
 	}
 		
 	else
 	{
 		x = -1.0 * b / a;
 		printf("I count root x = %f. \n", x);
-		return 0;
 	}
 	
 	return 0;
@@ -173,19 +170,15 @@ int main()
 			x_1 = (-b - sqrt(delta))/ (2 * a);
 			x_2 = (-b + sqrt(delta))/ (2 * a);
 			printf("The function has two zero positions x_1 = %f and x_2 = %f. \n", x_1, x_2);
-			return 0;
 		}
 		else if (delta == 0)
 		{
 			x_0 = -b / (2 * a);
 			printf("The function has one zero positions x_0 = %f. \n", x_0);
-			return 0;
 		}
 		else
 		{
-			printf("The function has no zero position in the set od real numbers. \n");
-			return 0;
-			
+			printf("The function has no zero position in the set od real numbers. \n");	
 		}
 	return 0;
 
@@ -205,32 +198,26 @@ int main()
 	if (v < 1)
 	{
 		printf("This wind speed on the Beaufort scale is Calm. \n");
-		return 0;
 	}
 	else if (v >= 1 && v <= 3)
 	{
 		printf("This wind speed on the Beaufort scale is Zefir. \n");
-		return 0;
 	}
 	else if (v >= 4 && v <= 27)
 	{
 		printf("This wind speed on the Beaufort scale is Breeze. \n");
-		return 0;
 	}
 	else if (v >= 28 && v <= 47)
 	{
 		printf("This wind speed on the Beaufort scale is Gale. \n");
-		return 0;
 	}
 	else if (v >= 48 && v <= 63)
 	{
 		printf("This wind speed on the Beaufort scale is Storm. \n");
-		return 0;
 	}	
 	else
 	{
 		printf("This wind speed on the Beaufort scale is Hurricane. \n");
-		return 0;
 	}
 	
 	return 0;
