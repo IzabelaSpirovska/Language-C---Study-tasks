@@ -419,7 +419,6 @@ int main()
             bill_B = charge_B;
             result_bill = bill_A - bill_B;
             printf("If you buy package B, you will save %.2f PLN: \n", result_bill);
-            return 0;
         }
         else if (gb_A > 100)
         {
@@ -427,14 +426,12 @@ int main()
             bill_B = charge_B + gb_B * EXTRA_B;
             result_bill = bill_A - bill_B;
             printf("If you buy package B, you will save %.2f PLN: \n", result_bill);
-            return 0;
         }
         if (gb_A > 6)
         {
             bill_C = charge_C;
             result_bill = bill_A - bill_C;
             printf("If you buy package C, you will save %.2f PLN: \n", result_bill);
-            return 0;
         }
  
     }
@@ -453,7 +450,6 @@ int main()
             bill_C = charge_C;
             result_bill = bill_B - bill_C;
             printf("If you buy package C, you will save %.2f PLN: \n", result_bill);
-            return 0;
         }
     }
     else if (package == 'C' || package == 'c')
@@ -515,8 +511,7 @@ int main()
 		if (t > 0)
 		{
 			s = v * t;
-			printf("The sound needs %f s time to travel %f m distance from center to point.", t, s);	
-			return 0;	
+			printf("The sound needs %f s time to travel %f m distance from center to point.", t, s);		
 		}
 		else
 		{
