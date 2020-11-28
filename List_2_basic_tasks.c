@@ -309,12 +309,10 @@ int main()
 	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
 	{
 		printf("The year is a leap.");
-		return 0;
 	}
 	else
 	{
 		printf("This year is not a leap year.");
-		return 0;
 	}
 	
 	return 0;
@@ -359,8 +357,7 @@ int main()
 		if (s > 0)
 		{
 			t = s / v;
-			printf("The sound needs %f s time to travel %f m distance in the selected center.", t, s);	
-			return 0;	
+			printf("The sound needs %f s time to travel %f m distance in the selected center.", t, s);		
 		}
 		else
 		{
@@ -387,19 +384,16 @@ int main()
 	{
 		result = a + b;
 		printf("The operator entered is +. The result of the addition is %.2f \n", result);
-		return 0;
 	}
 	else if (op == '-')
 	{
 		result = a - b;
 		printf("The operator entered is -. The result of the subtraction is %.2f \n", result);
-		return 0;
 	}
 	else if (op == '*')
 	{
 		result = a * b;
 		printf("The operator entered is *. The result of the multiplication is %.2f \n", result);
-		return 0;
 	}
 	else if (op == '/')
 	{
@@ -407,7 +401,6 @@ int main()
 		{
 			result = a / b;
 			printf("The operator entered is /. The result of the division is %.2f \n", result);
-			return 0;
 		}
 		else
 		{
@@ -558,17 +551,14 @@ int main()
     if (isalpha(character))
     {
         printf("It is a letter.\n");
-        return 0;
     }
     else if (isdigit(character))
     {
         printf("It is a a number.\n");
-        return 0;
     }
     else
     {
         printf("It is a special character.\n");
-        return 0;
     }
     
     return 0;
