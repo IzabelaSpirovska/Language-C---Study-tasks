@@ -57,22 +57,18 @@ int main()
 	if (a >= b && a >= c && a >= d)
 	{
 		printf("%d is the largest number. \n", a);
-		return 0;
 	}	
 	else if (b >= a && b >= c && b >= d)
 	{
 		printf("%d is the largest number. \n", b);
-		return 0;
 	}	
 	else if (c >= a && c >= b && c >= d)
 	{
 		printf("%d is the largest number. \n", c);
-		return 0;
 	}	
 	else
 	{
 		printf("%d is the largest number. \n", d);
-		return 0;
 	} 
 	
 	return 0;
