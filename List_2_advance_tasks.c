@@ -102,7 +102,7 @@ int main()
 					break;
 					}
 		case 23: case 11:	
-				{
+					{
 					if (minutes < 10)
 					{
 					printf("It's an hour 11:0%d.", minutes);	
@@ -233,7 +233,7 @@ int main()
 					}
 					break;
 					}
-		default:	{
+		default:		{
 					printf("Wrong hour was introduced.");
 					break;
 					}
@@ -342,33 +342,28 @@ int main()
     {
         bill_A = charge_A; 
         printf("You will finally pay %.2f PLN. \n", bill_A);
-        return 0;
     }
     else if ((package == 'A' || package == 'a') && gb > OVER_A)
     {
         gb_A = gb - OVER_A;
         bill_A = charge_A + gb_A * EXTRA_A; 
         printf("You will finally pay %.2f PLN: \n", bill_A);
-        return 0;
     }
     else if ((package == 'B' || package == 'b') && gb <= OVER_B)
     {
         bill_B = charge_B; 
         printf("You will finally pay %.2f PLN: \n", bill_B);
-        return 0;
     }
     else if ((package == 'B' || package == 'b') && gb > OVER_B)
     {
         gb_B = gb - OVER_B;
         bill_B = charge_B + gb_B * EXTRA_B; 
         printf("You will finally pay %.2f PLN: \n", bill_B);
-        return 0;
     }
     else if (package == 'C' || package == 'c')
     {
         bill_C = charge_C;
         printf("You will finally pay %.2f PLN: \n", bill_C);
-        return 0;
     }
     else
     {
