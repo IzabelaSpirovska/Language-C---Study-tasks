@@ -308,7 +308,7 @@ const N = 17;
 
 int main()
 {
-	int a1,an;
+	int a1, an;
 	int count = 1;
 	
 	printf("Enter the next 17 words of the sequence a1=3, an=3(an-1)-4: \n");
