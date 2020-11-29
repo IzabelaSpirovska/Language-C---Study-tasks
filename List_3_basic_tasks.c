@@ -335,7 +335,7 @@ int main()
 	
 	while(count <= n)
 	{
-		printf("%d \n", i);
+		printf("%d. %d \n", count, i);
 		i += 3;
 		count++;
 	}
@@ -350,14 +350,14 @@ int main()
 int main()
 {
 	unsigned long n;
-	int i;
-	int count = 1;
+	int count;
+	int i = 1;
 	
 	printf("Enter the last natural number of the arithmetic sequence: \n");
 	scanf("%lu", &n);
 	printf("List of consecutive word of the arithmetic progression from 1 to %d are: \n", n);
 	
-	for(i = 1; count <= n; count++)
+	for(count = 1; count <= n; count++)
 	{
 		printf("%d. %d \n", count, i);
 		i+= 3;
@@ -402,13 +402,13 @@ const int N = 12;
 int main()
 {
 	int n, factorial;
-	int i;
-	int count = 1;
+	int count;
+	int i = 1;
 	
 	printf("12 consecutive factorial natural numbers are: \n");
 	
 	
-	for(i = 1; count <= N; count += 1)
+	for(count = 1; count <= N; count += 1)
 	{
 		factorial = count * i;
 		i = factorial;
@@ -443,6 +443,29 @@ int main()
 	
 	return 0;
 }
+
+//loop for
+	
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int count;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	printf("List of consecutive words of the sequence an = 1/n from 1 to n are: \n");
+	
+	
+	for(count = 1; count <= n; count++)
+	{
+		printf("1/%d \n", count);
+	}
+	
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5h
 //loop while
@@ -465,6 +488,30 @@ int main()
 		printf("%d. %d \n", count, an);
 		an = 3 * an - 4;
 		count++;
+	}
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+const N = 17;
+
+int main()
+{
+	int a1, an;
+	int count = 1;
+	
+	printf("Enter the next 17 words of the sequence a1=3, an=3(an-1)-4: \n");
+	
+	a1 = 3;
+	an = a1;
+	
+	for(count = 1; count <= N; count++)
+	{
+		printf(" %d. %d \n", count, an);
+		an = 3 * an - 4;
 	}
 	
 	return 0;
@@ -495,6 +542,30 @@ int main()
 	
 	return 0;
 }
+
+// loop for
+
+#include<stdio.h>
+const int N = 31;
+
+int main()
+{
+	int a0, an;
+	int count = 1; 
+	
+	printf("Enter the next 31 words of the sequence a0 = 0, an = 2an-1 + 1 (dla n > 1): \n");
+	
+	a0 = 0;
+	an = a0;
+	
+	for(count = 1; count <= N; count++)
+	{
+		printf("%d. %d \n", count, an);
+		an = 2 * an + 1;	
+	}
+	
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5j
 //loop while
@@ -514,6 +585,30 @@ int main()
 	{
 		sum += count;
 		count++;
+	}
+	
+	printf("Sum of Natural Numbers = %d \n", sum);
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n, sum;
+	int count;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	
+	
+	for(count = 1; count <= n; count++)
+	{
+		sum += count;
 	}
 	
 	printf("Sum of Natural Numbers = %d \n", sum);
@@ -540,6 +635,31 @@ int main()
 	{
 		sum = sum + pow(count,2);
 		count++;
+	}
+	
+	printf("Sum of Natural Numbers = %d \n", sum);
+	
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	unsigned int n, sum;
+	int count;
+	int i = 1;
+	
+	printf("Enter an natural number: \n");
+	scanf("%du", &n);
+	
+	
+	for(count = 1; count <= n; count++)
+	{
+		sum = sum + pow(count,2);
 	}
 	
 	printf("Sum of Natural Numbers = %d \n", sum);
@@ -580,6 +700,38 @@ int main()
 		
 	return 0;
 }
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n, an;
+	int i;
+	int count_even = 0;
+	int count_odd = 0;
+	printf("Enter the number of words of the sequence: \n");
+	scanf("%du", &n);
+	
+	for(i = 1; i <= n; i++)
+	{
+		printf("Enter the word sequence: \n");
+		scanf("%du", &an);
+		if(an % 2 == 0)
+		{
+			count_even++;
+		}
+		else
+		{
+			count_odd++;
+		}
+	}
+	printf("The number of even natural numbers upto: %d \n", count_even);
+	printf("The number of odd natural numbers upto: %d\n", count_odd);
+		
+	return 0;
+}
 ----------------------------------------------------------------------------------------------
 //Task 5m
 //loop while
@@ -614,6 +766,44 @@ int main()
 			count_zero++;
 		}
 	i++;
+	}
+	printf("The number of positive integer upto: %d \n", count_pos);
+	printf("The number of negative integer upto: %d \n", count_neg);
+	printf("Number of zero: %d \n", count_zero);
+		
+	return 0;
+}
+
+//loop for
+
+#include<stdio.h>
+
+int main()
+{
+	unsigned int n;
+	int an, i;
+	int count_pos = 0;
+	int count_neg = 0;
+	int count_zero = 0;
+	printf("Enter the number of words of the sequence: \n");
+	scanf("%du", &n);
+	
+	for(i = 1; i <= n; i++)
+	{
+		printf("Enter the word sequence: \n");
+		scanf("%d", &an);
+		if(an < 0)
+		{
+			count_neg++;
+		}
+		else if (an > 0)
+		{
+			count_pos++;
+		}
+		else
+		{
+			count_zero++;
+		}
 	}
 	printf("The number of positive integer upto: %d \n", count_pos);
 	printf("The number of negative integer upto: %d \n", count_neg);
