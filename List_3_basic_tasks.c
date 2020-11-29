@@ -182,7 +182,7 @@ int main()
 	
 	while(i < n)
 	{
-		printf("%d \t", i);
+		printf("%d \n", i);
 		i += 2;
 	}
 	
@@ -292,7 +292,7 @@ int main()
 	
 	while(count <= n)
 	{
-		printf("1/%d \t", count);
+		printf("1/%d \n", count);
 		count++;
 
 	}
@@ -318,7 +318,7 @@ int main()
 	
 	while(count <= N)
 	{
-		printf(" %d. %d \n", count, an);
+		printf("%d. %d \n", count, an);
 		an = 3 * an - 4;
 		count++;
 	}
@@ -344,7 +344,7 @@ int main()
 	
 	while(count <= N)
 	{
-		printf(" %d. %d \n", count, an);
+		printf("%d. %d \n", count, an);
 		an = 2 * an + 1;
 		count++;	
 	}
@@ -472,7 +472,7 @@ int main()
 	i++;
 	}
 	printf("The number of positive integer upto: %d \n", count_pos);
-	printf("The number of negative integer upto: %d\n", count_neg);
+	printf("The number of negative integer upto: %d \n", count_neg);
 	printf("Number of zero: %d \n", count_zero);
 		
 	return 0;
