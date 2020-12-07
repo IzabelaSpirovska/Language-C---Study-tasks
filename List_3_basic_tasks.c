@@ -937,3 +937,62 @@ int main()
 	}
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 10
+	
+#include<stdio.h>
+const int BIGGEST_NUMBER = 100;
+const int SMALLEST_NUMBER = 1;
+
+int main()
+{
+	int i, max, min, equal, less, more, choice, half, div_half;
+	int count = 0;
+ 	
+	printf("Think of a number between 1 and 100. \n");
+	printf("You can choose: \n 1. less, \n 2. more, \n 3. equal \n");
+	
+	
+	half = BIGGEST_NUMBER / 2;
+	
+	while(choice != 3)
+	{
+		printf("\n Is your number \n 1. less, \n 2. more, \n 3. equal \n to %d \n", half);
+		scanf("%d", &choice);
+		
+		if(choice == 1)
+		{
+			if(half % 2 == 0)
+			{
+				half /= 2;
+			}
+			else
+			{
+				half = half / 2 + 1;
+			}
+		}
+		else if(choice == 2)
+		{
+			if(half % 2 == 0)
+			{
+				div_half = half / 2;
+				half += div_half;
+			}
+			else
+			{
+				div_half = half / 2 + 1;
+				half += div_half;
+			}
+		}
+		else if(choice == 3)
+		{
+			printf("Your number is %d!", half);
+		}
+		else
+		{
+			printf("You entered wrong number!");
+		}
+	}
+
+	return 0;
+}
