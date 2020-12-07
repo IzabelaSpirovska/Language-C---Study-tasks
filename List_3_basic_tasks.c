@@ -950,14 +950,14 @@ int main()
 	int count = 0;
  	
 	printf("Think of a number between 1 and 100. \n");
-	printf("You can choose: \n 1. less, \n 2. more, \n 3. equal \n");
+	printf("You can choose: \n 1 less, \n 2 more, \n 3 equal \n");
 	
 	
 	half = BIGGEST_NUMBER / 2;
 	
 	while(choice != 3)
 	{
-		printf("\n Is your number \n 1. less, \n 2. more, \n 3. equal \n to %d \n", half);
+		printf("\n Is your number \n 1 less, \n 2 more, \n 3 equal \n to %d \n", half);
 		scanf("%d", &choice);
 		
 		if(choice == 1)
