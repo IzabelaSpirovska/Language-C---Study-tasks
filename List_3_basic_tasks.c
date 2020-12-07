@@ -902,3 +902,38 @@ int main()
 	
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 9
+
+#include<stdio.h>
+
+
+int main()
+{
+	unsigned int n, p, flag;
+	int i = 0; 
+	int count = 2;
+	
+	printf("Enter an integer: \n");
+	scanf("%du", &n);
+	printf("The next first numbers less than or equal to %d is: \n", n);
+	
+	for(i = 2; i <= n; i++)
+	{
+		for(p = 2; p <= count - 1; p++)
+		{
+			if(count % p == 0)
+			{
+				flag = 1;
+			}
+		}
+		
+		if(flag == 0 || count == 2)
+		{
+			printf("%d \n", count);
+		}
+		count++;
+		flag = 0;
+	}
+	return 0;
+}
