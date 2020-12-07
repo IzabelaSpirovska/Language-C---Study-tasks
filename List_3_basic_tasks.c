@@ -811,3 +811,32 @@ int main()
 		
 	return 0;
 }
+----------------------------------------------------------------------------------------------
+//Task 6
+	
+#include<stdio.h>
+
+int main()
+{
+	float n, max;
+		
+	do
+	{
+		printf("Enter the number: \n");
+		scanf("%f", &n);
+		
+		if(n > max)
+		{
+			if(n > 0)
+			{
+				max = n;
+			}
+		}	
+	}
+	while(n > 0);
+	{
+		printf("The largest number entered was: %.2f \n", max);
+	}
+		
+	return 0;
+}
