@@ -1005,7 +1005,7 @@ int main()
 {
 	int i, j, n;
 	
-	printf("Enter a natural number: \n");
+	printf("Enter a number of lines: \n");
 	scanf("%d", &n);
 	printf("\n");
 	
@@ -1016,6 +1016,32 @@ int main()
 			
 		printf("\n");
 
+	}
+	
+	
+	return 0;
+}
+----------------------------------------------------------------------------------------------
+//Task 11b
+	
+#include<stdio.h>
+
+int main()
+{
+	int i, j, n;
+	
+	printf("Enter a number of lines: \n");
+	scanf("%d", &n);
+	printf("\n");
+	
+	for(i = 1; i <= n; i++)
+	{
+		for(j = n; j >= i; j--)
+		{
+			printf("*");
+		}
+		
+		printf("\n");
 	}
 	
 	
